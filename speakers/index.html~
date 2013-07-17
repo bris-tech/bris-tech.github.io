@@ -1,0 +1,18 @@
+---
+layout: default
+title: #bristech - Speakers
+---
+
+<div id="home">
+  <h1>Speakers</h1>
+  <ul class="speakers">
+  {% for post in site.categories['speakers'] reversed %}
+    {% assign avatar = '/img/no-avatar.png' %}
+    {% if post.avatar != null %}
+    Not empty
+    {% assign avatar = post.avatar %}
+    {% endif %}
+    <li class="speaker well pull-left span4"><a href="{{ post.url }}"><img src="{{ avatar }}"> {{ post.title }}</a></li>
+  {% endfor %}
+  </ul>
+</div>

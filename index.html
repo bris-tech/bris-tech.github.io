@@ -1,44 +1,35 @@
-<!DOCTYPE html>
-<html>
+---
+layout: default
+title: #bristech
+---
 
-  <head>
-    <meta charset='utf-8' />
-    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
-    <meta name="description" content="BrisTech : http://briste.ch website" />
+<div id="home">
+  <h1 class="page-header">Next Session...</h1>
+  {% assign display = true %}
+  {% for post in site.categories['event'] reversed %}
+    {% if post.categories contains 'archive' %}
+    {% elsif display %}
+      {% assign display = false %}
+      <h3><a href="{{ post.url }}">{{ post.date | date_to_string }} - {{ post.title }}</a></h3>
+      {{ post.content }}
+      <p>Tagged with: {{ post.tags | join: ', ' }}</p>
+    {% else %}
+    {% endif %}
+  {% endfor %}
 
-    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+  {% if display %}
+  <p>Please check back soon for information about the next session.</p>
+  {% endif %}
 
-    <title>BrisTech</title>
-  </head>
 
-  <body>
 
-    <!-- HEADER -->
-    <div id="header_wrap" class="outer">
-        <header class="inner">
-          <a id="forkme_banner" href="https://github.com/bris-tech">View on GitHub</a>
-
-          <h1 id="project_title">BrisTech</h1>
-          <h2 id="project_tagline">http://briste.ch website</h2>
-
-        </header>
-    </div>
-
-    <!-- MAIN CONTENT -->
-    <div id="main_content_wrap" class="outer">
-      <section id="main_content" class="inner">
-        <p>Coming soon</p>
-      </section>
-    </div>
-
-    <!-- FOOTER  -->
-    <div id="footer_wrap" class="outer">
-      <footer class="inner">
-        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
-      </footer>
-    </div>
-
-    
-
-  </body>
-</html>
+  <h1 class="page-header">News</h1>
+  {% for post in site.categories['news'] %}
+    <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
+    <span><small>Posted by {{ post.author }} on {{ post.date | date_to_string }}</small></span>
+    <br>
+    <br>
+    {{ post.content }}
+    <hr>
+  {% endfor %}
+</div>

@@ -1,0 +1,29 @@
+---
+layout: default
+title: #bristech - About
+---
+
+<div id="home">
+  <h1>About</h1>
+  
+  <p>
+  Bristech is a group of technically-minded people meeting up once a month
+  for beer, pizza and some (hopefully) informative talks about new and
+  interesting things that can be done in the world of computer programming.
+
+  <p>
+  We are not fussy about your language of choice, nor your professional
+  background - we believe that there's something to learn from everything
+  across the spectrum of programming. So whether you're a PHP guru, a C#
+  enterprise developer, a Haskell researcher or an Arduino hobbyist, if
+  you've got something interesting to tell us about, why not come and give
+  us a talk?
+
+  <p>
+  Meetings are held on the first Thursday of each month, at 
+  <a href="http://www.theislandbristol.com/contact.html">The Island</a> in
+  the centre of Bristol:
+  <br>
+  <br>
+  <iframe width="100%" height="450" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.co.uk/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=the+island,+bristol&amp;aq=&amp;sll=47.73855,12.508828&amp;sspn=48.694938,114.169922&amp;ie=UTF8&amp;hq=&amp;hnear=The+Island,+Silver+St,+Bristol+BS1+2AG,+United+Kingdom&amp;ll=51.456614,-2.592387&amp;spn=0.01099,0.027874&amp;t=m&amp;z=14&amp;output=embed"></iframe><br /><small><a href="https://maps.google.co.uk/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=the+island,+bristol&amp;aq=&amp;sll=47.73855,12.508828&amp;sspn=48.694938,114.169922&amp;ie=UTF8&amp;hq=&amp;hnear=The+Island,+Silver+St,+Bristol+BS1+2AG,+United+Kingdom&amp;ll=51.456614,-2.592387&amp;spn=0.01099,0.027874&amp;t=m&amp;z=14" style="color:#0000FF;text-align:left">View Larger Map</a></small>
+</div>
