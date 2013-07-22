@@ -19,6 +19,7 @@
 #meetup {
   border:1px solid #aaa;
   padding-top: 5px;
+  padding-bottom: 5px;
 }
 
 iframe {
