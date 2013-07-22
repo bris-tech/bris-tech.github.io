@@ -1,8 +1,8 @@
 ---
 layout: session
 title: "Session 1"
-categories: event archive
-speaker: joebloggs
-tags: http testing jvm
+categories: event
+speakers: [joebloggs, johndoe]
+tags: space-separated technology list
 ---
-Our first session
+A template session

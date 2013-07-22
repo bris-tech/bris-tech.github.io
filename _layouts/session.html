@@ -1,0 +1,7 @@
+---
+layout: default
+---
+<h3><a href="{{ post.url }}">{{ page.date | date_to_string }} - {{ page.title }}</a></h3>
+<p>Tagged with: {{ page.tags | join: ', ' }}</p>
+<br/>
+{{ content }}

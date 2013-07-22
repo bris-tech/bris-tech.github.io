@@ -1,14 +1,14 @@
 ---
 layout: session
-title: "Session 2013.1"
+title: "Session 2013.1 - HTTP Request testing with Betamax and NodeCopter"
 categories: event
-speaker: robfletcher
-tags: http testing jvm
+speakers: 
+    - robfletcher
+    - andrewnesbitt
+tags: http testing jvm groovy node.js quadcopter
 ---
 It's our first session, and we'll be welcoming:
 
-## Rob Fletcher: Testing HTTP Requests with Betamax
+### [Rob Fletcher]({% post_url 2000-01-01-rob-fletcher %}): Testing HTTP Requests with Betamax
 
-and
-
-## TBC
+### [Andrew Nesbitt]({% post_url 2000-01-01-andrew-nesbitt %}): NodeCopter

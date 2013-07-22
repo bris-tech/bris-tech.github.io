@@ -6,40 +6,40 @@ layout: default
 {{ content }}
 </div>
 
+{% assign gotprevious = false %}
 {% assign gotcomingup = false %}
-{% for post in site.categories['event'] %}
+{% for post in site.posts %}
+{{ post.title }} : {{ post.speakers | join: ',' }}
+{% if post.speakers contains page.speakerid %}
 {% if post.categories contains 'archive' %}
-{% elsif post.speaker == page.speakerid %}
+{% assign gotprevious = true %}
+{% else %}
 {% assign gotcomingup = true %}
 {% endif %}
+{% endif %}
 {% endfor %}
+
 {% if gotcomingup %}
 <div>
   <h3>Coming Up...</h3>
   <ul>
-  {% for post in site.categories['event'] %}
+  {% for post in site.categories.event %}
   {% if post.categories contains 'archive' %}
-  {% elsif post.speaker == page.speakerid %}
-    <li><a href="{{ post.url }}">{{ post.date | date_to_string }} - {{ post.title }}</a></li>
+  {% elsif post.speakers contains page.speakerid %}
+    <li><a href="{{ post.url }}">{{ post.title }}</a></li>
   {% endif %}
   {% endfor %}
   </ul>
 </div>
 {% endif %}
 
-{% assign gotprevious = false %}
-{% for post in site.categories['archive'] %}
-{% if post.speaker == page.speakerid %}
-{% assign gotprevious = true %}
-{% endif %}
-{% endfor %}
 {% if gotprevious %}
 <div>
   <h3>Previous Talks</h3>
   <ul>
-  {% for post in site.categories['archive'] %}
-  {% if post.speaker == page.speakerid %}
-    <li><a href="{{ post.url }}">{{ post.date | date_to_string }} - {{ post.title }}</a></li>
+  {% for post in site.categories.archive %}
+  {% if post.speakers contains page.speakerid %}
+    <li><a href="{{ post.url }}">{{ post.title }}</a></li>
   {% endif %}
   {% endfor %}
   </ul>
