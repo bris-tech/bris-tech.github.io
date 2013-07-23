@@ -1,6 +1,13 @@
 ---
 layout: default
 ---
+<div class="well pull-right">
+  {% if page.avatar != null %}
+    <img src="{{ page.avatar }}">
+  {% else %}
+    <img src="/img/no-avatar.png">
+  {% endif %}
+</div>
 <h2>{{ page.title }}</h2>
 <div id="post">
 {{ content }}
@@ -9,7 +16,6 @@ layout: default
 {% assign gotprevious = false %}
 {% assign gotcomingup = false %}
 {% for post in site.posts %}
-{{ post.title }} : {{ post.speakers | join: ',' }}
 {% if post.speakers contains page.speakerid %}
 {% if post.categories contains 'archive' %}
 {% assign gotprevious = true %}
