@@ -9,7 +9,6 @@ title: #bristech - Speakers
   {% for post in site.categories['speakers'] reversed %}
     {% assign avatar = '/img/no-avatar.png' %}
     {% if post.avatar != null %}
-    Not empty
     {% assign avatar = post.avatar %}
     {% endif %}
     <li class="speaker well pull-left span3"><a href="{{ post.url }}"><img src="{{ avatar }}"> {{ post.title }}</a></li>
