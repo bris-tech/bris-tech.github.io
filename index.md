@@ -1,3 +1,0 @@
-# BrisTech
-
-### Coming Soon
