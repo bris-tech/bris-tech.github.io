@@ -1,6 +1,6 @@
 ---
 layout: session
-title: "Session 2013.1 - HTTP Request testing with Betamax and NodeCopter"
+title: "Session 2013.1 - HTTP Request testing with Betamax, and Introducing NodeCopter"
 categories: event
 speakers: 
     - robfletcher
