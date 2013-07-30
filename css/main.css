@@ -8,6 +8,14 @@
   padding: 5px 0px;
 }
 
+.hero-unit {
+  padding: 30px;
+}
+
+.hero-unit .navbar {
+  padding-top: 11px;
+}
+
 .well {
   margin-top: 15px;
 }
@@ -41,4 +49,16 @@ h1.page-header {
 
 .carousel {
   margin-bottom: 0px;
+}
+
+.navbar .nav>li>a:focus, .navbar .nav>li>a:hover {
+  color: #A90F3D;
+}
+
+a {
+  color: #777;
+}
+
+a:focus, a:hover {
+  color: #A90F3D;
 }
