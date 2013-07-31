@@ -12,7 +12,12 @@ title: #bristech - Calendar
   {% if post.categories contains 'archive' %}
   {% else %}
   {% assign nonedisplayed = false %}
-  <h3><a href="{{ post.url }}">{{ post.date | date_to_string }} - {{ post.title }}</a></h3>
+  <h3>
+    <a href="{{ post.url }}">{{ post.date | date_to_string }} - {{ post.title }}</a>
+    {% if page.meetupid != null %}
+    <a href="http://www.meetup.com/bristech/events/{{ page.meetupid }}/" data-event="{{ page.meetupid }}" class="mu-rsvp-btn">RSVP</a>
+    {% endif %}
+  </h3>
   <p>Tagged with: {{ post.tags | join: ', ' }}</p>
   <hr/>
   {% endif %}

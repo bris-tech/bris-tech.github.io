@@ -10,7 +10,12 @@ title: #bristech
     {% if post.categories contains 'archive' %}
     {% elsif display %}
       {% assign display = false %}
-      <h3><a href="{{ post.url }}">{{ post.date | date_to_string }} - {{ post.title }}</a></h3>
+      <h3>
+        <a href="{{ post.url }}">{{ post.date | date_to_string }} - {{ post.title }}</a>
+        {% if post.meetupid != null %}
+        <a href="http://www.meetup.com/bristech/events/{{ post.meetupid }}/" data-event="{{ post.meetupid }}" class="mu-rsvp-btn">RSVP</a>
+        {% endif %}
+      </h3>
       <p><small>Tagged with: {{ post.tags | join: ', ' }}</small></p>
       {{ post.content }}
     {% else %}

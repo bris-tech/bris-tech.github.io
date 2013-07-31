@@ -1,11 +1,12 @@
 ---
 layout: session
-title: "Session 2013.1 - HTTP Request testing with Betamax, and Introducing NodeCopter"
+title: "HTTP Request testing with Betamax, and Introducing NodeCopter"
 categories: event
 speakers: 
     - robfletcher
     - andrewnesbitt
 tags: http testing jvm groovy node.js quadcopter
+meetupid: 130028162
 ---
 It's our first session, and we'll be welcoming:
 
