@@ -12,6 +12,8 @@ layout: nil
     <pubDate>{{ site.time | date: "%a, %d %b %Y %H:%M:%S %z" }}</pubDate>
     <lastBuildDate>{{ site.time | date: "%a, %d %b %Y %H:%M:%S %z" }}</lastBuildDate>
 {% for post in site.posts %}
+{% if post.categories contains 'speakers' %}
+{% else %}
     <item>
       <title>{{ post.title }}</title>
       <link>http://briste.ch{{ post.url }}</link>
@@ -20,6 +22,7 @@ layout: nil
       <guid>http://briste.ch{{ post.id }}</guid>
       <description>{{ post.content | xml_escape }}</description>
     </item>
+{% endif %}
 {% endfor %}
   </channel>
 </rss>
