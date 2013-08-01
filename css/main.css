@@ -68,3 +68,17 @@ h1:first-child {
   margin-top: 0px;
 }
 
+div.icons > a, div.icons > div {
+  vertical-align: bottom;
+}
+
+div.icons > div {
+  width: 36px;
+  line-height: 18px;
+  display: inline-block;
+}
+
+div.icons > a > img {
+  width: 36px;
+  height: 36px;
+}
