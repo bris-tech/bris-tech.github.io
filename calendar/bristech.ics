@@ -26,9 +26,13 @@ UID:{{ post.date | date: '%Y%m%d' }}@briste.ch
 SUMMARY:{{ post.title }}
 DTSTART;TZID=Europe/London:{{ post.date | date: '%Y%m%d' }}T190000
 DTEND;TZID=Europe/London:{{ post.date | date: '%Y%m%d' }}T213000
-X-ALT-DESC;FMTTYPE=text/html: {% if post.categories contains 'archive' %}{% elsif post.meetupid != null %}
- <a href="http://www.meetup.com/bristech/events/{{ post.meetupid }}/">RSVP on Meetup.com</a><br/><br/>{% endif %}
+LOCATION:{% if post.location != null %}{{ post.location }}
+{% else %}The Island, Bridewell Street, Bristol
+{% endif %}X-ALT-DESC;FMTTYPE=text/html: {% if post.categories contains 'archive' %}{% elsif post.meetupid != null %}
+ <a href="http://www.meetup.com/bristech/events/{{ post.meetupid }}/">RSVP on meetup.com</a><br/><br/>{% endif %}
  {{ post.content | strip_newlines }}
+DESCRIPTION:For full details, see {{ post.url }}
+ Please RSVP on meetup.com: "http://www.meetup.com/bristech/events/{{ post.meetupid }}/
 END:VEVENT
 {% endfor %}
 END:VCALENDAR
