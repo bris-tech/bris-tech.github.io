@@ -31,8 +31,7 @@ LOCATION:{% if post.location != null %}{{ post.location }}
 {% endif %}X-ALT-DESC;FMTTYPE=text/html: {% if post.categories contains 'archive' %}{% elsif post.meetupid != null %}
  <a href="http://www.meetup.com/bristech/events/{{ post.meetupid }}/">RSVP on meetup.com</a><br/><br/>{% endif %}
  {{ post.content | strip_newlines }}
-DESCRIPTION:For full details, see {{ post.url }}
- Please RSVP on meetup.com: "http://www.meetup.com/bristech/events/{{ post.meetupid }}/
+DESCRIPTION:For full details, see http://briste.ch{{ post.url }}\nPlease RSVP on meetup.com: "http://www.meetup.com/bristech/events/{{ post.meetupid }}/
 END:VEVENT
 {% endfor %}
 END:VCALENDAR

@@ -1,0 +1,25 @@
+---
+layout: nil
+---
+<?xml version="1.0"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Bristech</title>
+    <link>http://briste.ch/</link>
+    <atom:link href="http://briste.ch/rss.xml" rel="self" type="application/rss+xml" />
+    <description>News and Events from Bristech - a meetup for technically minded people in Bristol.</description>
+    <language>en-gb</language>
+    <pubDate>{{ site.time | date: "%a, %d %b %Y %H:%M:%S %z" }}</pubDate>
+    <lastBuildDate>{{ site.time | date: "%a, %d %b %Y %H:%M:%S %z" }}</lastBuildDate>
+{% for post in site.posts %}
+    <item>
+      <title>{{ post.title }}</title>
+      <link>http://briste.ch{{ post.url }}</link>
+      <pubDate>{{ post.date | date: "%a, %d %b %Y %H:%M:%S %z" }}</pubDate>
+      <author>bristech</author>
+      <guid>http://briste.ch{{ post.id }}</guid>
+      <description>{{ post.content | xml_escape }}</description>
+    </item>
+{% endfor %}
+  </channel>
+</rss>
