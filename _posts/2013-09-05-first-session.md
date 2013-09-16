@@ -1,20 +1,22 @@
 ---
 layout: session
-title: "HTTP Request testing with Betamax, and Introducing NodeCopter"
+title: "NodeCopter and Why buy a thermometer when you can buy one?"
 categories: event
 speakers: 
-    - robfletcher
+    - samdavies
     - andrewnesbitt
 tags: http testing jvm groovy node.js quadcopter
 meetupid: 130028162
 ---
-It's our first session, and we'll be welcoming:
+Well, our first session was not without hiccups - unfortunately <a href="{% post_url 2000-01-01-rob-fletcher %}">Rob Fletcher</a> had a bump at the motorway services on his way to Bristol, so <a href="{% post_url 2000-01-01-sam-davies %}">Sam Davies</a> stepped in at the last minute.
 
-### <a href="{% post_url 2000-01-01-rob-fletcher %}">Rob Fletcher</a>: Testing HTTP Requests with Betamax
+### <a href="{% post_url 2000-01-01-sam-davies %}">Sam Davies</a>: Why buy a thermometer when you can build one?
 
-When your application talks to external systems over HTTP the last thing you need is for third-party downtime, rate limiting, flaky integration environments or lack of network connectivity to make your tests unreliable. It's also vital to test how your application handles errors and unexpected responses which may not be easy to provoke deliberately.
+We’re all pretty genial people in our office, however, together with car parking, one of the topics that is always likely to get a response is the air conditioning. It’s a regular occurrence for people to be sat coding in their coats, but equally the meeting cupboard suffers from what can only be described as sauna-like properties.
 
-Betamax isolates your unit tests from third-party collaborators that are not under your control by recording real HTTP exchanges to a *tape* that is played back when your tests run. Tapes can even be created and edited manually giving you the ability to simulate edge cases.
+I decided that I needed to buy a thermometer. I find that life is better with more data, and that we would all feel a lot better with some facts to backup our complaints.
+
+I didn’t really want to just measure the temperature, I wanted to chart it. I wanted a chart of the temperature in lots of different places, all the time. I didn’t want to spend all day typing readings into a spreadsheet, so I needed to log it automatically. I needed an Arduino. Luckily my colleague had one - I ordered a thermistor and we were away.
 
 ### <a href="{% post_url 2000-01-01-andrew-nesbitt %}">Andrew Nesbitt</a>: NodeCopter
 
