@@ -1,7 +1,7 @@
 ---
 layout: session
 title: "NodeCopter and Why buy a thermometer when you can buy one?"
-categories: event
+categories: event archive
 speakers: 
     - samdavies
     - andrewnesbitt
