@@ -11,7 +11,7 @@ title: #bristech - Speakers
     {% if post.avatar != null %}
     {% assign avatar = post.avatar %}
     {% endif %}
-    <li class="speaker well pull-left span3"><a href="{{ post.url }}"><img src="{{ avatar }}"> {{ post.title }}</a></li>
+    <li class="speaker well pull-left span3"><a href="{{ post.url }}"><img src="{{ avatar }}" width="80" height="80" title="Bristech guest speaker"> {{ post.title }}</a></li>
   {% endfor %}
   </ul>
 </div>
