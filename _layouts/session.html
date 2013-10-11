@@ -1,13 +1,30 @@
 ---
 layout: default
 ---
+<div itemscope itemtype="http://data-vocabulary.org/Event">
 <h3>
-  {{ page.date | date_to_string }} - {{ page.title }}
+	<time itemprop="startDate">{{ page.date | date_to_string }}</time> - <span itemprop="description">{{ page.title }}</span>
   {% if post.categories contains 'archive' %}
   {% elsif page.meetupid != null %}
-  <a href="http://www.meetup.com/bristech/events/{{ page.meetupid }}/" data-event="{{ page.meetupid }}" class="mu-rsvp-btn">RSVP</a>
+  <a href="http://www.meetup.com/bristech/events/{{ page.meetupid }}/" data-event="{{ page.meetupid }}" class="mu-rsvp-btn" itemprop="url">RSVP</a>
   {% endif %}
 </h3>
+
 <p>Tagged with: {{ page.tags | join: ', ' }}</p>
+
+</div>
+
 <br/>
 {{ content }}
+<br/>
+
+Venue:
+    <span itemprop="location" itemscope itemtype="http://data-vocabulary.org/?Organization">
+    <span itemprop="name">TheIsland, Bristol</span>
+    <span itemprop="address" itemscope itemtype="http://data-vocabulary.org/Address">
+         <span itemprop="street-address">Silver Street (entrance on Bridewell Street)</span>, 
+	 <span itemprop="locality">BRISTOL</span>
+	 <span itemprop="postcode">BS1 2AG</span>
+     </span>
+  </span>
+
