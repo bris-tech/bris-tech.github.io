@@ -3,7 +3,7 @@ layout: default
 ---
 <div itemscope itemtype="http://data-vocabulary.org/Event">
 <h3>
-	<time itemprop="startDate">{{ page.date | date_to_string }}</time> - <span itemprop="description">{{ page.title }}</span>
+	<time itemprop="startDate">1900-2100 Thursday {{ page.date | date_to_string }}</time> - <span itemprop="description">{{ page.title }}</span>
   {% if post.categories contains 'archive' %}
   {% elsif page.meetupid != null %}
   <a href="http://www.meetup.com/bristech/events/{{ page.meetupid }}/" data-event="{{ page.meetupid }}" class="mu-rsvp-btn" itemprop="url">RSVP</a>
@@ -20,7 +20,7 @@ layout: default
 
 Venue:
     <span itemprop="location" itemscope itemtype="http://data-vocabulary.org/?Organization">
-    <span itemprop="name">TheIsland, Bristol</span>
+	    <span itemprop="name"><a href="/about">TheIsland</a></span>
     <span itemprop="address" itemscope itemtype="http://data-vocabulary.org/Address">
          <span itemprop="street-address">Silver Street (entrance on Bridewell Street)</span>, 
 	 <span itemprop="locality">BRISTOL</span>
