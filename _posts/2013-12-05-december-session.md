@@ -1,7 +1,7 @@
 ---
 layout: session
 title: "Psychology for Designers, and The Science behind Data Visualisation"
-categories: event
+categories: event archive
 speakers: [grahamodds, joeleech]
 tags: ux design visualisation
 meetupid: 141728862
