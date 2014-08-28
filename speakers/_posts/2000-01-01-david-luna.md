@@ -4,7 +4,7 @@ title: David Luna
 speakerid: davidluna 
 categories: speakers 
 permalink: /speakers/david-luna.html 
-avatar: /img/avatars/david-luna.jpg
+avatar: /img/avatars/david_luna.jpg
 ---
 
 David Luna is a software engineer who has lived in Bristol for four
