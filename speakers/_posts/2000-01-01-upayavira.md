@@ -4,6 +4,7 @@ title: Upayavira
 speakerid: upayavira
 categories: speakers
 permalink: /speakers/upayavira.html
+avatar: http://odoko.com/wp-content/uploads/2014/07/upayavira.png
 ---
 
 As well as being a software developer, trainer and entrepreneur, Upayavira is a 
