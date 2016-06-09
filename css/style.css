@@ -16,10 +16,17 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 }
 
 html, body{
-  	font-family: 'Montserrat', sans-serif;
-    font-size: 100%;
-  	 background: #FFf;
-  	 -webkit-font-smoothing: antialiased;
+    font-family: "Kameron",Georgia,serif;
+    font-weight: 400;
+    font-size: 16px;
+    letter-spacing: 0px;
+    font-family: "Raleway";
+    font-size: 21px;
+    line-height: 1.6em;
+    letter-spacing: .4px;
+    font-weight: 600;
+    font-style: normal;
+    color: rgba(0,0,0,.5)
 }
 body a{
 	transition:0.5s all;
@@ -62,11 +69,11 @@ body a{
 .top-nav ul li a{
 	color: #b1b3b6;
 	padding: 0 1em;
-	font-size: 1.2em;
 	font-weight: 700;
 	text-align: center;
-	text-transform: lowercase;
-	position: relative;
+    font-size: 14px;
+    text-transform: uppercase;
+    position: relative;
 }
 .top-nav ul li.active a,
 .top-nav ul li a:hover{
@@ -93,10 +100,10 @@ body a{
     clear: both;
 }
 nav {
-	position: relative;
-	float: right;
-    font-family: digital;
-    text-transform: lowercase;
+	width: 50%;
+	margin: 0 auto;
+    /*font-family: digital;*/
+    /*text-transform: lowercase;*/
 }
 nav ul {
 	padding: 0;
@@ -200,7 +207,7 @@ nav a#pull {
 /*---- benner ----*/
 .banner-info{
 	padding: 3em 0 5em;
-    font-family: digital;
+    /*font-family: digital;*/
     text-transform: lowercase;
 }
 .banner-info span{
@@ -212,10 +219,10 @@ nav a#pull {
 .banner-info p{
 	color: #CCCCCC;
 	font-weight:400;
-	font-size: 1.3em;
+	font-size: 1.1em;
 	line-height: 1.7em;
 	margin: 1em auto;
-	width: 50%;
+    width: 80%;
 }
 /*---- services ----*/
 .section-head h2{
@@ -248,7 +255,7 @@ nav a#pull {
 }
 .sponsors-grid p{
 	font-weight:400;
-	font-family: 'Open Sans', sans-serif;
+	/*font-family: 'Open Sans', sans-serif;*/
 	line-height:1.7em;
 	color:#888888;
 }
@@ -277,7 +284,7 @@ nav a#pull {
 }
 .monthly-head p{
 	font-weight:400;
-	font-family: 'Open Sans', sans-serif;
+	/*font-family: 'Open Sans', sans-serif;*/
 	line-height:1.7em;
 	color:#777777;
 }
@@ -291,7 +298,7 @@ nav a#pull {
 }
 .conference-top-left p{
 	font-weight: 400;
-	font-family: 'Open Sans', sans-serif;
+	/*font-family: 'Open Sans', sans-serif;*/
 	line-height: 1.7em;
 	color: #777777;
 }
@@ -306,7 +313,7 @@ nav a#pull {
 }
 .next-meetup {
     padding: 3em 3em 3em 5em;
-    font-family: 'Montserrat', sans-serif;
+    /*font-family: 'Montserrat', sans-serif;*/
     font-size: 100%;
     background: #FFf;
     -webkit-font-smoothing: antialiased;
@@ -316,7 +323,7 @@ nav a#pull {
     padding-bottom: 2em;
 }
 #next-meetup h3 {
-    font-family: digital;
+    /*font-family: digital;*/
     font-weight: 900;
     font-size: 2.5em;
     color: #222222;
@@ -332,7 +339,7 @@ nav a#pull {
 }
 #coming-soon li:before {
     content: "#";
-    font-family: digital;
+    /*font-family: digital;*/
     display: inline-block;
     margin-left: -1.3em; /* same as padding-left set on li */
     width: 1.3em; /* same as padding-left set on li */
@@ -342,7 +349,7 @@ nav a#pull {
 }
 .next-meetup p, .next-meetup li {
     font-weight: 400;
-    font-family: 'Open Sans', sans-serif;
+    /*font-family: 'Open Sans', sans-serif;*/
     line-height: 1.7em;
     color: #777777;
 }
@@ -412,7 +419,7 @@ nav a#pull {
 .tm-head-grid h4{
 	font-size: 1.2em;
 	color: #222222;
-	font-family: 'Montserrat', sans-serif;
+	/*font-family: 'Montserrat', sans-serif;*/
 	text-shadow: 0px 0px 1px rgba(66, 66, 66, 0.39);
 	-webkit-text-shadow: 0px 0px 1px rgba(66, 66, 66, 0.39);
 	-moz-text-shadow: 0px 0px 1px rgba(66, 66, 66, 0.39);
@@ -454,26 +461,29 @@ nav a#pull {
 }
 .contact-left label{
 	font-weight: 400;
-	font-family: 'Open Sans', sans-serif;
+	/*font-family: 'Open Sans', sans-serif;*/
 	line-height: 1.7em;
 	color: #FFF;
 	margin-bottom:1.8em;
 	display:block;
 }
-.contact-left-grid p,.contact-left-grid p a{
+.contact-right-grid p,.contact-right-grid p a{
 	color: #FFF;
 	font-weight: 300;
 	font-size: 1.1em;
-	font-family: 'Open Sans', sans-serif;
+	/*font-family: 'Open Sans', sans-serif;*/
 	margin: 0.8em 0;
 }
-.contact-left-grid p a{
+.contact-right-grid p:first-child,.contact-right-grid p:first-child a{
+    margin-top: 0;
+}
+.contact-right-grid p a{
 	text-decoration:none;
 }
-.contact-left-grid p a:hover{
+.contact-right-grid p a:hover{
 	color:#35C2F8;
 }
-.contact-left-grid p span{
+.contact-right-grid p span{
 	width: 28px;
 	height: 32px;
 	display: inline-block;
@@ -484,10 +494,10 @@ nav a#pull {
 .contact-left-grids div.col-md-6{
 	padding:0;
 }
-.contact-left-grid p span.c-twitter{
+.contact-right-grid p span.c-twitter{
 	background-position: 0px -66px;
 }
-.contact-left-grid p span.c-pluse{
+.contact-right-grid p span.c-pluse{
 	background-position: 0px -132px;
 }
 /*----*/
@@ -498,7 +508,7 @@ nav a#pull {
 	border-top:1px solid #FFF;
 	padding:1.5em 0;
 	font-weight:300;
-	font-family: 'Open Sans', sans-serif;
+	/*font-family: 'Open Sans', sans-serif;*/
 	margin-top:5em;
 }
 .copy-right p a{
