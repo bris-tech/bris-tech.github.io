@@ -240,8 +240,9 @@ nav a#pull {
 }
 .sponsors-grid span{
 	width:180px;
-	height:50px;
+	height:100px;
 	display:inline-block;
+    margin-top: 40px;
 }
 .sponsors-grid h3 a{
 	color: #222;
@@ -259,14 +260,17 @@ nav a#pull {
 	line-height:1.7em;
 	color:#888888;
 }
-.sponsors-grid span.sponsor-justeat{
-	background:url(../images/just-eat.png) no-repeat 0px 0px;
-}
 .sponsors-grid span.sponsor-scottlogic{
 	background:url(../images/SL_primary_AW_POS_RGB_web.png) no-repeat 0px 0px;
 }
 .sponsors-grid span.sponsor-softwire{
 	background:url(../images/softwire.png) no-repeat 0px 0px;
+}
+.sponsors-grid span.sponsor-polecat{
+    background:url(../images/polecat.png) no-repeat 0px 0px;
+}
+.sponsors-grid span.sponsor-purplesecure{
+    background:url(../images/purplesecure.png) no-repeat 0px 0px;
 }
 .sponsors-grids{
 	padding:3em 0;
