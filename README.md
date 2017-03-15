@@ -1,4 +1,4 @@
 bris-tech.github.io
 ===================
 
-This is the source of the http://briste.ch website
+This is the source of the http://bris.tech website
